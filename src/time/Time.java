@@ -1,6 +1,6 @@
 package time;
 
-import java.util.Scanner;
+//import java.util.Scanner;
 
 /**
  * @modfied by Liz Dancy
@@ -9,7 +9,7 @@ import java.util.Scanner;
  *
  */
 
-import javax.swing.JOptionPane;
+//import javax.swing.JOptionPane;
 
 /**
  * Taken from Wendi Jollymore
@@ -24,6 +24,7 @@ public class Time {
 		System.out.println("**GH Total Seconds = " + totalSeconds);
 	}
 
+	
 	public static int getTotalSeconds(String time) throws NumberFormatException, StringIndexOutOfBoundsException {
 
 		int hours = getTotalHours(time);
@@ -35,6 +36,7 @@ public class Time {
 		return hours * 3600 + minutes * 60 + seconds + milliseconds;
 	}
 
+	
 	public static int getSeconds(String time) throws NumberFormatException, StringIndexOutOfBoundsException {
 
 		return Integer.parseInt(time.substring(6, 8));
@@ -52,7 +54,7 @@ public class Time {
 	}
 
 	public static int getMilliseconds(String time) throws NumberFormatException, StringIndexOutOfBoundsException {
-		return Integer.parseInt(time.substring(9, 11));
+		return Integer.parseInt(time.substring(7, 8));
 	}
 
 }
